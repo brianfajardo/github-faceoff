@@ -1,15 +1,8 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
-
-const HelloWorld = React.createClass({
-    render: function () {
-        return (
-            <div>Enter React Land</div>
-        )
-    }
-})
+const routes = require('./config/routes')
 
 ReactDOM.render(
-    <HelloWorld />,
+    routes,
     document.getElementById('app')
 )
