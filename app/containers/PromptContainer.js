@@ -22,7 +22,7 @@ const PromptContainer = React.createClass({
         this.setState({
             username: ''
         })
-
+        console.log(this.props)
         if (this.props.routeParams.playerOne) {
             // Go to /faceoff
             // Passing data along to /faceoff through this.props.location.query
