@@ -6,10 +6,11 @@ const { transparentBg, spacing } = require('../styles/index')
 const UserDetails = require('./UserDetails')
 const UserDetailsWrapper = require('./UserDetailsWrapper')
 const MainContainer = require('./MainContainer')
+const Loading = require('./Loading')
 
 function ConfirmFaceoff(props) {
     return props.isLoading === true
-        ?   <p>LOADING...</p>
+        ?   <Loading speed={800} text={"Feeding the hamsters"}/>
         :   <MainContainer>
                 <h1>Confirm Github Users</h1>
                 <div className="col-sm-8 col-sm-offset-2">

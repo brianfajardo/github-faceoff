@@ -6,6 +6,7 @@ const { transparentBg, spacing } = require('../styles/index')
 const UserDetails = require('./UserDetails')
 const UserDetailsWrapper = require('./UserDetailsWrapper')
 const MainContainer = require('./MainContainer')
+const Loading = require('./Loading')
 
 // Create a private stateless function to reduce repeating code (DRY)
 function StartOver() {
@@ -25,7 +26,7 @@ function Results(props) {
     // Check if isLoading
     if(props.isLoading === true) {
         return (
-            <p>Loading...</p>
+            <Loading speed={200} text={'Load times in 2017 LOL'} />
         )
     }
 
