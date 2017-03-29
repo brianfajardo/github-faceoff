@@ -10,7 +10,7 @@ const Loading = require('./Loading')
 
 function ConfirmFaceoff(props) {
     return props.isLoading === true
-        ?   <Loading speed={800} text={"Feeding the hamsters"}/>
+        ?   <Loading speed={200} text={"Feeding the hamsters"}/>
         :   <MainContainer>
                 <h1>Confirm Github Users</h1>
                 <div className="col-sm-8 col-sm-offset-2">

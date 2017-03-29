@@ -8,9 +8,9 @@ const Home = React.createClass({
         return (
             <MainContainer>
                 <h1>Github Faceoff</h1>
-                <p className='lead'>Some fancy motto</p>
+                <p className='lead'>"Mano e mano."</p>
                 <Link to='/playerOne'>
-                    <button type='button' className='btn btn-lg btn-success'>Begin!</button>
+                    <button type='button' className='btn btn-lg btn-success'>Begin</button>
                 </Link>
             </MainContainer >
         )
