@@ -50,7 +50,7 @@ const githubHelpers = {
             .all(players.map(username => getUserInfo(username)))
             // use .map just to get data object from response
             .then(info => info.map((user) => user.data))
-            .catch(err => console.warn('Error in getPlayersInfo', err))
+            .catch(err => console.warn('Github user does not exist! Please enter a valid username!', err))
     },
     battle: function (players) {
         const playerOneData = getPlayersData(players[0])

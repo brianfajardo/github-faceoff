@@ -5,15 +5,12 @@ const { Link } = require('react-router')
 const { transparentBg, spacing } = require('../styles/index')
 const UserDetails = require('./UserDetails')
 const UserDetailsWrapper = require('./UserDetailsWrapper')
-
-function show(object) {
-    return <pre>{JSON.stringify(object, null, ' ')}</pre>
-}
+const MainContainer = require('./MainContainer')
 
 function ConfirmFaceoff(props) {
     return props.isLoading === true
         ?   <p>LOADING...</p>
-        :   <div className="jumbotron col-sm-12 text-center" style={transparentBg}>
+        :   <MainContainer>
                 <h1>Confirm Github Users</h1>
                 <div className="col-sm-8 col-sm-offset-2">
                     <UserDetailsWrapper header="Challenger 1">
@@ -37,7 +34,7 @@ function ConfirmFaceoff(props) {
                     </Link>
                 </div>
             </div>
-        </div>                  
+        </MainContainer>                  
 }
 
     ConfirmFaceoff.propTypes = {
