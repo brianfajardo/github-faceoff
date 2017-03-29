@@ -25,7 +25,7 @@ const PromptContainer = React.createClass({
 
         if (this.props.routeParams.playerOne) {
             // Go to /faceoff
-            // Passing data along to /faceoff
+            // Passing data along to /faceoff through this.props.location.query
             this.context.router.push({
                 pathname: '/faceoff',
                 query: {
