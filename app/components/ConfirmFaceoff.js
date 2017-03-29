@@ -26,12 +26,12 @@ function ConfirmFaceoff(props) {
                 <div className="col-sm-8 col-sm-offset-2">
                     <div className="col-sm-12">
                         <button type="button" className="btn btn-lg btn-success" onClick={props.onInitiateFaceoff} style={spacing}>
-                            Start battle
+                            Battle
                         </button>
                 </div>
                 <div className="col-sm-12">
                     <Link to="/playerOne">
-                        <button type="button" className="btn btn-lg btn-danger" onClick={props.onInitiateFaceoff} style={spacing}>
+                        <button type="button" className="btn btn-lg btn-danger" style={spacing}>
                             Reselect Players
                         </button>
                     </Link>
