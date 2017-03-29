@@ -28,9 +28,21 @@ const ConfirmFaceoffContainer = React.createClass({
                 })
             })
     },
+    handleInitiateFaceoff: function () {
+        this.context.router.push({
+            pathname: '/results',
+            // Pushing playersInfo through to the /results route
+            state: {
+                playersInfo: this.state.playersInfo
+            }
+        })
+    },
     render: function () {
         return (
-            <ConfirmFaceoff isLoading={this.state.isLoading} playersInfo={this.state.playersInfo} />
+            <ConfirmFaceoff
+            isLoading={this.state.isLoading}
+            onInitiateFaceoff={this.handleInitiateFaceoff}
+            playersInfo={this.state.playersInfo} />
         )
     }
 })
